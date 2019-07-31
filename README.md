@@ -1,68 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To Start `npm run storybook`
 
-## Available Scripts
+Note, around halfway through my assignment, my storybook had issues. Should have them resolved, but let me kno if not.
 
-In the project directory, you can run:
+- Assume the width of the component is forced, height it auto
+- Assume that the title can only be 2 lines long
+- Assume repo name and Issue Number can only own half a side
+- Isn't any sort of anchor points between repo name and issue number. Just a 9px gap. It seems to float and move over the place. Grid might not be possible. 
+- What is the case when there's a single line? With nothing underneath. There was no example. Trying to determine max height from that
+- Had to hardcode the css grid to some pixel heights, which is fine.
+- Issue actions 32 + 12 + 12
+- I just placed a hard 8px padding around. Can be tweaked later
+- Unsure which pieces are the hover state for the top right button. Going to assume it should be there avatar hover
+- Using grid for whole layout became tricky because of permutations. Moved main body into grid
 
-### `npm start`
+---
+This was about the halfway mark for my two hour limit, and I realized I didn't have enought time to keep taking notes. Stopped notes to try and touch as much of the assignment as possible. 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Pieces still need to be moved out of px, make relative.
+- Added `Polish` library to handle darken cases, never used 
+- Didn't get to tests
+- Didn't get to split into smaller components
+- No clean up to my file. Just gigantic structure file
+- Didn't get to "use" Component
+- Didn't add props
+- Didn't get to add States (hover, closed)
+- Didn't finish adding button/menu hover
+- Labels weren't configured to handle overflow correct
+- Didn't Look at Avatar Hover
 
-### `npm test`
+As a whole I took a little over two hours. My storybook ended up having issues halfway through so I tried not to count that to the time. Apparently using Storybooks automated builder can have some issues. I spent about 15 min at the start planning, then began coding. I used Create-React-App.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+My feeling is we can probably shave off some of the requirements. If I was actually doing this for a job, I would easily place between 10 - 20 hours to get this working right. Pieces off the top of my head to shave off
 
-### `npm run build`
+- Avatar hover and selected state
+- Issue Priority
+- Either the action button or the menu button
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+With those removed, I still believe it would take longer than 2 hours, especially if someone does it well, but I don't feel with those lost, I have any less ability to judge the developers skills.
